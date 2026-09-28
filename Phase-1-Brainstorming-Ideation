@@ -1,0 +1,119 @@
+Phase 1: Brainstorming & Ideation
+
+Project Title
+
+Import Data Using Transform Maps (Spreadsheet)
+
+1. Project Overview
+
+The project focuses on importing structured employee data from an external spreadsheet into ServiceNow using **Import Sets** and **Transform Maps**.
+
+The spreadsheet contains employee information that needs to be migrated into ServiceNow. The data is first loaded into an Import Set staging table and then transformed into records in the target Employee Test table.
+
+The project demonstrates how ServiceNow can be used to perform bulk employee data migration while maintaining data consistency and integrity.
+
+2. Problem Statement
+
+Organizations may maintain employee information in external spreadsheets and may need to transfer this information into ServiceNow.
+
+Manually entering a large number of employee records into ServiceNow can be time-consuming and may result in duplicate or inconsistent data.
+
+Therefore, a systematic method is required to import employee data from a spreadsheet into ServiceNow efficiently.
+
+3. Proposed Solution
+
+The proposed solution uses ServiceNow **Import Sets** and **Transform Maps** to automate the employee data import process.
+
+The proposed workflow is:
+
+1. Prepare employee data in an Excel spreadsheet.
+2. Upload the spreadsheet into ServiceNow.
+3. Load the spreadsheet data into an Import Set table.
+4. Create a Transform Map between the Import Set table and the Employee Test table.
+5. Map the source spreadsheet fields to the corresponding target fields.
+6. Transform the imported data.
+7. Use Coalesce to identify existing employee records.
+8. Update existing employee records and insert new employee records.
+9. Validate the imported employee data.
+10. Create reports and a dashboard to visualize the employee information.
+
+4. Objectives
+
+The main objectives of the project are:
+
+* To import employee data from an Excel spreadsheet into ServiceNow.
+* To create a custom Employee Test table.
+* To create an Employee Import table for staging imported data.
+* To create and configure a Transform Map.
+* To map spreadsheet fields to ServiceNow target fields.
+* To transform imported data into employee records.
+* To use Coalesce to identify existing employee records.
+* To prevent duplicate employee records.
+* To update existing employee information.
+* To insert new employee records.
+* To create reports for employee data analysis.
+* To create an Employee Analytics Dashboard.
+
+5. Initial Data Fields
+
+The employee spreadsheet contains the following fields:
+
+| Field         | Description                            |
+| ------------- | -------------------------------------- |
+| Employee ID   | Unique identifier of the employee      |
+| Employee Name | Name of the employee                   |
+| Email         | Email address of the employee          |
+| Department    | Department in which the employee works |
+| Location      | Location of the employee               |
+
+6. Initial Sample Data
+
+The initial spreadsheet contains sample employee information:
+
+| Employee ID | Employee Name | Email                                     | Department | Location  |
+| ----------- | ------------- | ----------------------------------------- | ---------- | --------- |
+| SB-0001     | Ravi Kumar    | [ravi@gmail.com](mailto:ravi@gmail.com)   | IT         | Chennai   |
+| SB-0002     | Priya Sharma  | [priya@gmail.com](mailto:priya@gmail.com) | HR         | Hyderabad |
+| SB-0003     | Arun Kumar    | [arun@gmail.com](mailto:arun@gmail.com)   | Finance    | Bangalore |
+| SB-0004     | Ajay Kumar    | [ajay@gmail.com](mailto:ajay@gmail.com)   | IT         | Chennai   |
+
+7. Expected Workflow
+
+```text
+External Excel Spreadsheet
+          ↓
+    Employee Import
+      Import Set
+          ↓
+     Transform Map
+          ↓
+      Field Mapping
+          ↓
+        Transform
+          ↓
+    Employee Test Table
+          ↓
+       Coalesce
+          ↓
+ Insert / Update / Ignore
+          ↓
+       Reports
+          ↓
+Employee Analytics Dashboard
+```
+
+8. Expected Outcome
+
+The expected outcome of the project is a ServiceNow solution that can import employee information from an Excel spreadsheet and create corresponding employee records in the Employee Test table.
+
+The solution should also be able to identify existing employee records using Coalesce, update existing records, insert new records, and prevent duplicate records when the same data is imported again.
+
+The project will also provide reports and an analytics dashboard for viewing and analyzing employee information.
+
+9. Conclusion
+
+The brainstorming and ideation phase establishes the project idea, problem statement, proposed solution, objectives, initial data fields, and expected workflow.
+
+The project will demonstrate the use of ServiceNow Import Sets and Transform Maps for structured employee data migration from an external spreadsheet.
+
+
