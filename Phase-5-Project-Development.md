@@ -202,10 +202,17 @@ The development phase implemented the complete employee data import workflow in 
 The solution enables employee data to be imported from a spreadsheet, transformed into ServiceNow records, updated when existing Employee IDs are detected, and prevented from being duplicated.
 
 Reports and the Employee Analytics Dashboard were also developed to provide visibility into the imported employee data.
+
 <img width="1917" height="911" alt="employee_test" src="https://github.com/user-attachments/assets/7a0f3273-5800-4289-bc5a-f9b9119332dd" />
+
 <img width="1916" height="907" alt="employee_import" src="https://github.com/user-attachments/assets/55f4dbff-7d6a-465a-9383-af26f17633f4" />
+
 <img width="1917" height="907" alt="transform_maps" src="https://github.com/user-attachments/assets/bc886ac4-9d81-434e-8af6-851cf5b2ae16" />
+
 <img width="1917" height="907" alt="field mapping " src="https://github.com/user-attachments/assets/c1e1a71c-47a5-4b5c-a113-d493d8d49f34" />
+
+<img width="1917" height="907" alt="transform_result" src="https://github.com/user-attachments/assets/0b09d6f1-ff6b-408c-8884-6dfdf9afa242" />
+
 
 
 
